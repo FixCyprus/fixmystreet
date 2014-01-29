@@ -16,11 +16,6 @@ sub problems_clause {
     return { bodies_str => { like => '%2333%' } };
 }
 
-sub base_url {
-    return FixMyStreet->config('BASE_URL') if FixMyStreet->config('STAGING_SITE');
-    return 'https://fix.hart.gov.uk';
-}
-
 sub path_to_web_templates {
     my $self = shift;
     return [
