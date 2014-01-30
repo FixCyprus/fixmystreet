@@ -12,6 +12,15 @@ a, a:visited {
     }
 }
 
+.issue-list-a {
+  li {
+      color:#666;
+      a {
+          color:#666;
+      }
+  }
+}
+
 h1.main {
     color: $primary;
     text-align: center;
@@ -44,6 +53,7 @@ h1.main {
     border-bottom:0.25em solid $primary;
     ul li a {
         text-transform: none;
+        color: #666;
         &.active {
             background: $primary;
             color: #fff;
